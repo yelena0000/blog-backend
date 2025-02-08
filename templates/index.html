@@ -61,7 +61,7 @@
                 </ul>
               </div>
               <div class="details mt-20">
-                <h3><a href="{% url 'post_detail' post.slug %}">{{ post.title }}</a></h3>
+                <h3><a href="{% url 'post_detail' post.slug %}"  style="color:#3a414e">{{ post.title }}</a></h3>
                 <p>{{ post.text|truncatechars:200 }}</p>
                 <a class="button" href="{% url 'post_detail' post.slug %}">Read More <i class="ti-arrow-right"></i></a>
               </div>
