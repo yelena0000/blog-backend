@@ -1,9 +1,11 @@
 {% extends 'base.html' %}
 
-{% block title %}Home - Sensive Blog{% endblock %}
+{% block title %}
+  {{ post.title }} - Blog Details
+{% endblock %}
 
-  {% block content %}
-  {% load static %}
+{% block content %}
+{% load static %}
 
     <!--================ Hero sm Banner start =================-->
     <section class="mb-30px">
