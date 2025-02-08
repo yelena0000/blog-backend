@@ -25,40 +25,7 @@
 - `STATIC_URL` — по умолчанию это `'/static/'`. [Что такое STATIC_URL](https://docs.djangoproject.com/en/3.0/ref/settings/#std:setting-STATIC_URL).
 - `STATIC_ROOT` — по умолчанию это `'None'`, т.е. текущая папка. [Что такое STATIC_ROOT](https://docs.djangoproject.com/en/3.0/ref/settings/#std:setting-STATIC_ROOT).
 - `MEDIA_URL` — по умолчанию это `'/media/'`. [Что такое MEDIA_URL](https://docs.djangoproject.com/en/3.0/ref/settings/#std:setting-MEDIA_URL).
-- `MEDIA_ROOT` — по умолчанию это `'media'`. [Что такое MEDIA_ROOT](https://docs.djangoproject.com/en/3.0/ref/settings/#std:setting-MEDIA_ROOT). 
-
-
-## Страницы сайта
-
-### Главная
-
-Страница называется `index` и находится по адресу [http://127.0.0.1:8000](http://127.0.0.1:8000).
-
-Шаблон страницы получает 2 переменные: `most_popular_posts` и `fresh_posts`.
-Обе переменные — это списки из **постов**. Каждый пост — это словарь такого вида:
-
-```
-{
-    'title': 'Are You Preparing Your Kids for the Real World?',
-    'text': 'We baby our kids like infants; we coddle them like delicate crystal; ...',
-    'author': 'Frank Sonnenberg',
-    'comments_amount': 138,
-    'image_url': 'image_are-you-preparing-your-kids-for-the-real-world.jpg',
-    'published_at': datetime.datetime(2017, 6, 4, 2, 9, tzinfo=<UTC>),
-    'slug': 'are-you-preparing-your-kids-for-the-real-world'
-}
-```
-
-Словарь содержит следующие ключи:
-
-* `title` — заголовок поста
-* `text` — текст поста
-* `author` — строка с именем автора поста
-* `comments_amount` — число комментариев под постом
-* `image_url` — ссылка на картинку поста
-* `published_at` — когда пост опубликован, это объект datetime
-* `slug` — [слаг](https://toster.ru/q/375615)
-
+- `MEDIA_ROOT` — по умолчанию это `'media'`. [Что такое MEDIA_ROOT](https://docs.djangoproject.com/en/3.0/ref/settings/#std:setting-MEDIA_ROOT).
 
 
 ### Страница поста
